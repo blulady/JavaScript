@@ -1,3 +1,3 @@
 var X = 5;
 X++;
-document.write{X};
+document.write(X);
