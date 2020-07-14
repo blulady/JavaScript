@@ -17,3 +17,7 @@ function or() {
 function not() {
     document.getElementById("nots").innerHTML = !(5<6)
 }
+
+document.write(typeof "cookies");
+
+document.write("24"+5);
