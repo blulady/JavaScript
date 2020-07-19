@@ -1,6 +1,2 @@
-document.write(X);
-{
-	let X = 32;
-	document.write("<br>" + X);
-}
-document.write("<br>" + X);
+var outside = "I am outside the building, I can't see in."
+document.getElementById("out").innerHTML = outside;
