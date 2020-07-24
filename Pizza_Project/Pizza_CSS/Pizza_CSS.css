@@ -51,7 +51,7 @@ div {
 .center {
     width: 200px;
     height: 200px;
-    float: center;
+    float: left;
 }
 
 #showText {
@@ -71,4 +71,14 @@ div {
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container .box {
+    width: 50%;
+    margin: 10px;
 }
