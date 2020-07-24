@@ -45,13 +45,13 @@ div {
 .right {
     width: 200px;
     height: 200px;
-    float: inherit;
+    float: right;
 }
 
 .center {
     width: 200px;
     height: 200px;
-    float: left;
+    float: center;
 }
 
 #showText {
