@@ -10,6 +10,6 @@
     }
 }
 
-.single-featured-image-header img2 {
+body img {
     animation: zoominoutsinglefeatured 15s forwards;
 }

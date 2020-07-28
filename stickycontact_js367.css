@@ -1,0 +1,23 @@
+/*div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: ;
+    width: 25%;
+    right:150px;
+    background-color: green;
+    padding: 50px;
+    font-size: 20px;
+}*/
+
+div {
+    background: green;
+    padding: 1em;
+    margin: 0 auto;
+    width: 10%;
+    font-size: 1.5;
+    color: white;
+    font-weight: bold;
+
+    position: sticky;
+    bottom: 25px;
+}
