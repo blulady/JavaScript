@@ -3,10 +3,16 @@
     <head>
         <meta name='viewport' content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="fadein.css">
-        <script src="fadein.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+            $('body').removeClass('fade-out');
+            });
+        </script>
     </head>
     <body>
-        <script>document.body.className += ' fade-out';</script>
+    <script>document.body.className += ' fade-out';</script>
+
         <h1>Responsive Text</h1>
         <p>Resize the browser windows to see how the text size scales. </p>
         <p>Use the "vw" unit when sizing the text. 10vw will set the size 
