@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Sarah Sanger</title>
+        <link rel="stylesheet" type="text/css" href="sample_Portfolio.css">
+    </head>
+
+<!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--HOME-->
+        <div id="Home">
+            <br>
+            <br>
+
+        <!--Video-->
+            <video autoplay muted loop id="forest_drone">
+                <source src="forest_drone.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        
+        <!--VIDEO TEXT-->
+            <div class="Video_Text">
+                <h1 style="color:white;">Sarah Sanger's Portfolio</h1>
+                    <p>
+                        <strong>
+                            <center>
+                                <q>The way to solve the conflict between human values and technological needs is not to run away from technology.
+                                <br>That’s impossible. The way to resolve the conflict is to break down the barriers of dualistic thought that 
+                                <br>prevent a real understanding of what technology is -not an exploitation of nature, but a fusion of nature 
+                                <br>and the human spirit into a new kind of creation that transcends both.</q>
+                                <br> -Robert M. Pirsig<br>
+                                <br>
+                                Welcome to Sarah Sanger's portfolio website where I will display my background and experience.<br>
+                                <br>Please reach out with any questions.
+                            </center>
+                        </strong>
+                    </p>
+            </div>
+        </div>
+        <!--Slideshow Section-->
+        <div id="Slideshow">
+                <div id="Slideshow_Background">
+                    <div id="Slideshow_Container">
+                        <div class="mySlides fade">
+                            <div class="Slide_Number"> 1 / 6</div>
+                            <img class="Slide_Show_Images" src="images/sarah"
+                        </div>
+                    </div>"
+                </div>
+        </div>
+            <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <div class="Column_2"> <!--Left Column-->
+                <img src="Images/laptop.jpeg" alt="Laptop">
+            </div>
+
+            <div class="Column_1"><!--Right Column-->
+                <h1>About</h1>
+                    <p>I enjoy the magic and the art of coding. One day I will hopefully be a software developer.<br><br>
+                    I hope to be a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages:HTML, CSS, JavaScript, SQL, and Python.<br><br>
+                    I want to be a full-stack developer and would love to work with you. <a href="#contact">Contact Me Below!</p>
+            </div> 
+        </div>
+<!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <div class="Column_1"> <!-- Left column -->
+                <h1>GitHub</h1>
+                    <p>You can view my coding projects on my GitHub profile here:<br>
+                    <center><a href="https://github.com/blulady/Tech-Academy-Projects" target="_blank">Blulady GitHub</a></center></p>
+            </div>
+
+            <div class="Column_2"> <!--Right Column-->
+                <a href="https://github.com/blulady/Tech-Academy-Projects" target="_blank"><img src="images/Octocat.png" alt="GitHub" ></a>
+            </div>
+        </div>
+<!--should there be an extra div here-->
+        <!--Contact Section-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="post"class="form-container"> <!--This specifies  where to send the form data and how; it is left blank --> 
+                    <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Enter your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Type your email address here" name="email" required>
+                        <label for="message"<b>Message</b></label>
+                            <input type="message" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+            <!--Footer-->
+        <footer>
+            <p>
+                <center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a> </center>
+            </p>
+        </footer>
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
+
+
+    

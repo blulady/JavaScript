@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Sarah Sanger</title>
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">        
+    </head>
+    <!--Body-->
+    <body class="Background">
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!--This makes it so our openForm function runs when we click contact on the nav bar-->
+        </div>
+        <!--HOME-->
+        <div id="Home">
+            <br> <!--SPACE BTWN NAVBAR & HEADING-->
+            <br>
+            <!--Video-->
+            <video autoplay muted loop id="Typing_Video">  <!--Makes a video play automatically--> 
+                <source src="forest_drone.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!--VIDEO Text-->
+        <div class="Video_Text">
+            <h1 style="color:white;"> Sarah Sanger Portfolio</h1>
+            <p>
+                <strong>
+                   <!--<center>-->
+                        <q> The way to solve the conflict between human values and technological needs is not to run away from technology.
+                            That’s impossible. The way to resolve the conflict is to break down the barriers of dualistic thought that
+                            prevent a real understanding of what technology is -not an exploitation of nature, but a fusion of nature
+                            and the human spirit into a new kind of creation that transcends both.</q>
+                            <br> -Robert M. Pirsig <br>
+                            <br>
+                            My name is Sarah and Welcome to my portfolio website. <br>
+                            On it, I will tell you about my background and experience.<br>
+                            <br>Thanks for Stopping By!!<br>
+
+                    <!--</center>-->
+                </strong>
+            </p>
+        </div>
+        <!--SlideShow Section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1/ 6</div>
+                            <img class="Slide_Show_Images" src="images/sarah.jpg" style="width:100%" alt="me"> <!--replace images names-->
+                                <div class="text">I am available to assist you on your project!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 6</div>
+                            <img class="Slide_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" style="width:100%" alt="morestuff">
+                            <div class="text">I would like to be a full-stack software developer,<br> trained in: <br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 6</div>
+                            <img class="Slide_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" style="width:100%" alt="things">
+                            <div class="text">the popular programming language Python</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">4 / 6</div>
+                            <img class="Slide_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" style="width:100%" alt="junk">
+                            <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">5 / 6</div>
+                            <img class="Slide_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" style="width:100%" alt="morejunk">
+                            <div class="text">back end developement, databases and SQL.</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">6 / 6</div>
+                            <img class="Slide_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" style="width:100%"alt="stuff">
+                            <div class="text">
+                                <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                            </div>
+                    </div>
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            
+            </div>
+
+        </div>
+        
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <div class="Column_2"><!--Left Column-->
+                <img src="images/laptop.jpeg" alt="Laptop">
+            </div>
+            <div class="Column_1"><!--Right Column-->
+                <h1>About</h1>
+                <p>I will be a softare developer who loves learning and making magic. Logic has a plethora of applications and this is an expressive one.
+                <br><br> I hope to be a graduate from <a href="https:www.learncodinganywhere.com" target="_blank">The Tech Academy'</a>s Software 
+                Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, and Python<br><br>
+                Someday I will be a full-stack developer and would love to make magic for your projects. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <div class="Column_1"> <!--Left Column-->
+                <h1>GitHub</h1>
+                    <p>You can view my coding projects on my GitHub profile here:<br>
+                    <center><a href="https://github.com/the-tech-academy" target="_blank"> The Tech Academy GitHub</a></center></p>    
+            </div>
+            <div class="Column_2"><!--Right Column-->
+                <a href="http://github.com/the-tech-academy" target="_blank"><img src="images/Octocat.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <!--Contact Secton-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"><!--free online service needs to be pushed first-->
+                    <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Enter your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Type your email address here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+        </div>
+        <!--footer section-->
+        <footer>
+            <p>
+                <center>&copy; Silly Productions <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+            </p>
+        </footer>
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>
