@@ -266,12 +266,12 @@ h1 {
 
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify;
+    text-align: center;
     letter-spacing: .1vw;
-    letter-spacing: 1.5vw;
+    font-size: 1.25vw;
     padding-left: 1vw;
     padding-right: 1vw;
-}
+}*/
 
 /*center allgn elements - this embraces all centered text- what does that mean?*/
 center {
