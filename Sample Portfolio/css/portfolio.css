@@ -28,16 +28,16 @@ body.fade-out {
     width: 100%; /*ensures navbar will span the entire width of the page*/
     z-index: 1; /*ensures other elements won't display over the navbar*/
     position: fixed; /*do we need this here? there is another*/
-    -webkit-animation: movenavtext 2.75s; /*Safari 4.0-8.0 what is this even?*/
+    -webkit-animation: movenavtext 3.75s; /*Safari 4.0-8.0 what is this even?*/
     letter-spacing: .2vw;
 }
 
 /*Navbar Text*/
-.Navbar a{
+.Navbar a {
     float: left; /*specifies that the text floats on the left on the navbar*/
     display: block; /*ensjures that other text will be displayed on the sam line or row*/
     color: white; /*this is the font color for the navbar text*/
-    padding: .75vw 1 vw; /*adds padding around our text*/
+    padding: .75vw 1vw; /*adds padding around our text*/
     text-decoration: none; /*this gets rid of the underlines under the text on our navbar*/
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw;

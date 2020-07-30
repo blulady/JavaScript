@@ -1,3 +1,9 @@
+document.body.className += 'fade-out';
+    $(function() {
+        $(body).removeClass('fade-out');
+    }
+); 
+
 //These functions open and close the contact form 
 
 function openForm() {
