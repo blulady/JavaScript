@@ -28,8 +28,8 @@ body.fade-out {
     width: 100%; /*ensures navbar will span the entire width of the page*/
     z-index: 1; /*ensures other elements won't display over the navbar*/
     position: fixed; /*do we need this here? there is another*/
-    -webkit-animation: moveNav 7.75s; /*Safari 4.0-8.0 what is this even?*/
-    animation: moveNav: 5s;
+    -webkit-animation: movenavtext 3.75s; /*Safari 4.0-8.0 what is this even?*/
+    letter-spacing: .2vw;
 }
 
 /*Navbar Text*/
@@ -44,7 +44,6 @@ body.fade-out {
     text-align: center; /*this centers the text w/in container*/
     position: relative;
     -webkit-animation: movenavText 5.57s;
-    animation: movenavText 5.75s;
     letter-spacing: .2vw;
 }
 
@@ -52,11 +51,11 @@ body.fade-out {
 /*looks like something is funky here*/
 @keyframes moveNav {
     from {left: -100vw;}
-    to {left: 0vw;}
+    to {right: 0vw;}
 }
 
 /*the annimation effect for moving the nav bar in from above the tope of the screen upon page load*/
-*@keyframes movenavText {
+@keyframes movenavText {
     from {top: -100vw;}
     to {top: 0vw;}
 }
@@ -111,8 +110,8 @@ body.fade-out {
     margin-top: 23%;
     position: relative;
     
-    -webkit-animation: MoveNav 8s; /*safari 4.0 -8.0*/
-    animation: movevideoText 8s;
+    -webkit-animation: MoveNav 4s; /*safari 4.0 -8.0*/
+    animation: movevideoText 4s;
 }
 
 /*slideshow styling*/
@@ -120,21 +119,21 @@ body.fade-out {
     background:rgba(255,255,255,0.35); /*creates a sligthly transparent white background that's placed over the video*/
 }
 
-/*.mySlides {
+.mySlides {
     display:none;
-}*/
+}
 
-/*a-webkit-keyframes mySlides fade {
-    from {opacity: .4} /*does this need a semi-colon?
+a-webkit-keyframes fade {
+    from {opacity: .4} /*does this need a semi-colon?*/
     to {opacity: 1}
-}*/
+}
 
 @keyframes fade {
     from {opacity: .4;}
     to {opacity: 1;}
 }
 
-#Slideshow_Container {
+#Slidshow_Container {
     width: 39.5vw;
     height: auto;
     padding-top: 4%;
