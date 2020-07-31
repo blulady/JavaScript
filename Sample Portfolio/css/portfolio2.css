@@ -117,9 +117,9 @@ body.fade-out {
     background: rgba(255,255,255, 0.35); /*slightly tansparent white background placed over video*/
 }
 
-.mySlides {
+/*.mySlides {
     display: none;
-}
+}*/
 
 @-webkit-keyframes fade {
     from {opacity: .4;}
@@ -145,7 +145,7 @@ body.fade-out {
     height: auto;
     box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
     width: auto;
-}
+  }
 
 /*Next and previous buttons*/
 .Previous, .Next {
@@ -262,7 +262,7 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin-top: 3%;
-    color: #1a1a1a;
+    color: darkgray;
 }
 
 p {
@@ -332,14 +332,14 @@ img:hover {
 /*makes contact form button slide in from right on the page load*/
 @keyframes movePopup {
     from {right: -40vw;}
-    to {bottom: 1.75;}
-}
+    to {bottom: 1.75vw;}
+  }
 
 /*button used to open contact form fixed at the bottom of the page*/
-.Pop_Up_Buttom {
+.Pop_Up_Button {
     bottom: 1.75vw;
     right: 1.75vw;
-    width: 25vw;
+    width: 25vw;  
     background-color: white;
     color: black;
     border: solid;
@@ -347,7 +347,7 @@ img:hover {
     position: fixed;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
-}
+  }
 
 /*popup form hidden by default*/
 .form-popup {
